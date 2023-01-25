@@ -12,6 +12,7 @@ function App() {
       <h1>praneeth First Remote app</h1>
       <h1>brn</h1>
       <h1>Haneel Kumar Remote app</h1>
+      <h1 >charan sai</h1>
 
       <div className="App">
     <h1>IPL Teams</h1>
