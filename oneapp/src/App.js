@@ -1,7 +1,10 @@
 
 import "./App.css";
+import ReactPlayer from 'react-player'
 
 function App() {
+    const [url, setUrl] = useState()
+
   return (
     <div className="App">
        <h1>Rahul's First Remote app</h1>
@@ -39,6 +42,24 @@ function App() {
 </div>
     </div>
     </div>
+    <input placeholder='url' onChange={(e:any)=>{setUrl(e.target.value)}}></input>
+      <iframe src={url}></iframe>
+      <ReactPlayer
+        url={url}
+        
+  config={{
+    youtube: {
+      playerVars: {
+
+        preload: "auto",
+
+        autoplay: true,
+
+    }
+    },
+    
+  }}
+/>
     </div>
   );
 }
